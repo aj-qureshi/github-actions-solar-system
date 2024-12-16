@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - env:
-          URL: '${{ inputs.igress-url }}'
+          URL: '${{ inputs.ingress-url }}'
         run: |
           curl https://$URL/live -s -k | jq -r .status | grep -i live
