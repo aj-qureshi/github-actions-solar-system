@@ -35,7 +35,7 @@ jobs:
         name: Integration Test
         runs-on: ubuntu-latest
         needs: dev-deploy
-        uses: ./github/workflows/reusable-workflow.yml@v87ae1cc
+        uses: ./.github/workflows/reusable-workflow.yml@v87ae1cc
         with:
           ingress-URL: ${{ needs.dev-deploy.outputs.APP_INGRESS_URL }}
             
