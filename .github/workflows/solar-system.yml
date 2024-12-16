@@ -32,9 +32,10 @@ jobs:
             name: Mocha-Test-Result
             path: test-results.xml
     dev-deploy:
-      steps:
-        - name: dev-deploy
-          run: echo "Hello"
+      name: dev-deploy
+      # steps:
+      #   - name: dev-deploy
+      #     run: echo "Hello"
 
     integration-testing:
         name: Integration Test
