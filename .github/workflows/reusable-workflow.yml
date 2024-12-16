@@ -4,7 +4,7 @@ on:
     inputs: 
       ingress-url:
         Input-id: tester
-        description: Provide the Ingress URLs
+        description: Provide the Ingress URLss
         required: true
         type: string
         
